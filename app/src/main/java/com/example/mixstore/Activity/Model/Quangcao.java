@@ -3,38 +3,40 @@ package com.example.mixstore.Activity.Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Quangcao {
-        @SerializedName("Idquangcao")
-        @Expose
-        private String idquangcao;
-        @SerializedName("Hinhquangcao")
-        @Expose
-        private String hinhquangcao;
-        @SerializedName("Idloaimathang")
-        @Expose
-        private String idloaimathang;
+import java.io.Serializable;
 
-        public String getIdquangcao() {
-            return idquangcao;
-        }
+public class Quangcao implements Serializable {
+    @SerializedName("Idquangcao")
+    @Expose
+    private String idquangcao;
+    @SerializedName("Hinhquangcao")
+    @Expose
+    private String hinhquangcao;
+    @SerializedName("Idloaimathang")
+    @Expose
+    private String idloaimathang;
 
-        public void setIdquangcao(String idquangcao) {
-            this.idquangcao = idquangcao;
-        }
+    public String getIdquangcao() {
+        return idquangcao;
+    }
 
-        public String getHinhquangcao() {
-            return hinhquangcao;
-        }
+    public void setIdquangcao(String idquangcao) {
+        this.idquangcao = idquangcao;
+    }
 
-        public void setHinhquangcao(String hinhquangcao) {
-            this.hinhquangcao = hinhquangcao;
-        }
+    public String getHinhquangcao() {
+        return hinhquangcao;
+    }
 
-        public String getIdloaimathang() {
-            return idloaimathang;
-        }
+    public void setHinhquangcao(String hinhquangcao) {
+        this.hinhquangcao = hinhquangcao;
+    }
 
-        public void setIdloaimathang(String idloaimathang) {
-            this.idloaimathang = idloaimathang;
-        }
+    public String getIdloaimathang() {
+        return idloaimathang;
+    }
+
+    public void setIdloaimathang(String idloaimathang) {
+        this.idloaimathang = idloaimathang;
+    }
 }

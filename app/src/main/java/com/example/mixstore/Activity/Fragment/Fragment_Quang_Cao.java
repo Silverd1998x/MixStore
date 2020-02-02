@@ -2,6 +2,7 @@ package com.example.mixstore.Activity.Fragment;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,7 +73,7 @@ public class Fragment_Quang_Cao extends Fragment {
 
             @Override
             public void onFailure(Call<List<Quangcao>> call, Throwable t) {
-
+                Log.d("TAG", "onFailure: ");
             }
         });
     }
